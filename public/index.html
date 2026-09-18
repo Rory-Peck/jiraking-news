@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="JIRAKING NEWS — the signal behind the headlines." />
+    <title>JIRAKING NEWS | The signal behind the headlines</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="JIRAKING NEWS home"><span>J</span> JIRAKING NEWS</a>
+      <nav aria-label="Primary navigation">
+        <a href="#latest">Latest</a>
+        <a href="#topics">Topics</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
+      <button class="menu-button" aria-label="Toggle menu">☰</button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent. Immediate. Informed.</p>
+          <h1>The signal behind the headlines.</h1>
+          <p class="hero-text">A focused news dashboard for the stories, ideas, and people shaping what comes next.</p>
+          <a class="button button-light" href="#latest">Explore the latest <span>→</span></a>
+        </div>
+        <div class="hero-card" aria-label="Featured story">
+          <p class="card-label">Story of the day</p>
+          <div class="orb"></div>
+          <p class="hero-card-title">The next chapter is already being written.</p>
+          <span class="read-time">6 min read</span>
+        </div>
+      </section>
+
+      <section class="dashboard" id="latest">
+        <div class="section-heading">
+          <div><p class="eyebrow">Your daily briefing</p><h2>Latest stories</h2></div>
+          <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search stories" aria-label="Search stories" /></label>
+        </div>
+        <div class="filters" id="topics" aria-label="Filter by topic">
+          <button class="filter active" data-topic="All">All stories</button>
+          <button class="filter" data-topic="Technology">Technology</button>
+          <button class="filter" data-topic="Culture">Culture</button>
+          <button class="filter" data-topic="Business">Business</button>
+          <button class="filter" data-topic="World">World</button>
+        </div>
+        <div class="story-grid" id="stories"></div>
+        <p class="empty-state" id="empty-state" hidden>No stories match your search.</p>
+      </section>
+
+      <section class="newsletter" id="newsletter">
+        <div><p class="eyebrow">Stay in the know</p><h2>The world, distilled.</h2><p>One smart briefing in your inbox every morning. No noise, no spam.</p></div>
+        <form id="newsletter-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" required placeholder="you@example.com" /><button class="button" type="submit">Subscribe <span>→</span></button><p class="form-message" role="status"></p></form>
+      </section>
+    </main>
+    <footer><span>© 2024 JIRAKING NEWS</span><span>Built for curious minds.</span></footer>
+    <script src="/app.js"></script>
+  </body>
+</html>
